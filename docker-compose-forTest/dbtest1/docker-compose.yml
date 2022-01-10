@@ -1,0 +1,10 @@
+version: "3.1"
+services:
+  dbtest1:
+    container_name: sql1
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "5000:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Abc1233345678"
